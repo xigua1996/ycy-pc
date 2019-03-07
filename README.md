@@ -1,4 +1,4 @@
-# meetingtea-pc
+# ycy-pc
 
 ## Project setup
 ```
