@@ -5,7 +5,9 @@
       <p style="font-size: 50px;color: var(--main-color)">超越</p>
       <p style="margin-top: 15px;margin-bottom:15px;color: var(--main-color);font-size: 22px;text-align: center">
         {{mode==-1?'登录':'注册'}}新用户，发现更多超越的话题</p>
-      <div class="login-form">
+
+      <!--login-->
+      <div class="login-form" v-show="mode==-1">
         <el-form style="text-align: center">
           <el-form-item>
             <el-input style="width: 352px" v-model="ruleForm.user_phone"></el-input>
@@ -16,6 +18,21 @@
         </el-form>
         <div class="btn" @click="onClickLoginBtn(ruleForm.user_phone,ruleForm.user_password)">
           登录
+        </div>
+      </div>
+
+      <!--reg-->
+      <div class="reg-form" v-show="mode==1">
+        <el-form style="text-align: center">
+          <el-form-item>
+            <el-input style="width: 352px" v-model="ruleForm.user_phone"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-input style="width: 352px" v-model="ruleForm.user_password" type="password"></el-input>
+          </el-form-item>
+        </el-form>
+        <div class="btn" @click="onClickLoginBtn(ruleForm.user_phone,ruleForm.user_password)">
+          注册
         </div>
       </div>
       <div class="reg-form"></div>

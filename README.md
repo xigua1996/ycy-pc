@@ -1,29 +1,16 @@
 # ycy-pc
 
-## Project setup
+## 项目设置
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 编译和热重载用于开发
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译和缩小生产
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
